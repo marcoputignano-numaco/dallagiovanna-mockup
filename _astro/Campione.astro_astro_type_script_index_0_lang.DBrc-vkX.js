@@ -1,0 +1,1 @@
+function e(){document.querySelectorAll(`[data-campione]`).forEach(e=>{if(e.dataset.ready)return;e.dataset.ready=`1`;let t=e.querySelector(`[data-campione-farina]`);if(!t)return;let n=new URLSearchParams(window.location.search).get(`farina`);n&&Array.from(t.options).some(e=>e.value===n)&&(t.value=n)})}e(),document.addEventListener(`astro:page-load`,e);
